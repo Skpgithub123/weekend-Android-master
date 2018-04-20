@@ -102,7 +102,7 @@ public class Reservation4 extends AppCompatActivity {
                     childdates.put(String.valueOf(i),cal.getTimeInMillis());
 
                 }
-                if(!nameuser.getText().toString().equals("") && !phone.getText().toString().equals("") && phone.length() == 8) {
+                if(!nameuser.getText().toString().equals("") && !phone.getText().toString().equals("") && phone.length()==8) {
                     Map<String, Object> child = new HashMap<String, Object>();
                     child.put("Bool", "true");
                     child.put("dates", childdates);
