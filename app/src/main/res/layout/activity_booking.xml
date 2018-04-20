@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_default"></include>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:background="@color/com_facebook_blue"
+     android:padding="6dp">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentTop="true"
+         android:text="حجوزاتي"
+         android:textColor="@color/tw__solid_white"
+         android:textSize="20dp"
+         android:textStyle="bold" />
+     <TextView
+         android:id="@+id/num_booking"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:text="3"
+         android:textColor="@color/tw__solid_white"
+         android:textSize="20dp"
+         android:textStyle="bold" />
+ </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/lstBooking"></ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/com_facebook_blue"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="طلب حجزي"
+            android:textColor="@color/tw__solid_white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/num_request"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="3"
+            android:textColor="@color/tw__solid_white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/lstBookingRequest"></ListView>
+
+</LinearLayout>

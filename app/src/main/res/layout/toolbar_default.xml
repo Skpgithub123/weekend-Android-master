@@ -1,0 +1,33 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="@dimen/abc_action_bar_default_height_material" >
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:minHeight="56dp"
+        android:gravity="left|center"
+        android:layout_height="@dimen/abc_action_bar_default_height_material">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="40dp"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:src="@drawable/appicon"
+            android:layout_gravity="left"
+            android:gravity="left" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service CRM"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"/>
+
+    </LinearLayout>-->
+
+
+
+    </android.support.v7.widget.Toolbar>

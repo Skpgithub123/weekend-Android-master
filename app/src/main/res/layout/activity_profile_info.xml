@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/login"
+        tools:context="com.yacob.weekend.Profile_info"
+        >
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_default"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/name" />
+
+    <EditText
+            android:id="@+id/name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="@string/email" />
+
+    <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"/>
+    <ListView
+            android:id="@+id/list_provider"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="6dp"></ListView>
+
+    <Button
+        android:id="@+id/saveprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="6dp"
+        android:background="@color/tw__blue_default"
+        android:text="@string/save"
+        android:textAlignment="center" />
+    </LinearLayout>
+
+
+

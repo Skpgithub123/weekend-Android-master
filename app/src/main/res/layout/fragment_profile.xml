@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:fitsSystemWindows="true"-->>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.design.widget.CoordinatorLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:fab="http://schemas.android.com/tools"
+                android:id="@+id/content"
+                android:background="#f5f5f5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <!--android:fitsSystemWindows="true"-->
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+                    <!--android:fitsSystemWindows="true"-->
+
+                    <android.support.design.widget.CollapsingToolbarLayout
+                        android:id="@+id/collapsing_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                        android:fitsSystemWindows="true"
+                        app:contentScrim="?attr/colorPrimary"
+                        app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+                        app:expandedTitleMarginStart="30dp"
+                        app:expandedTitleMarginEnd="30dp">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/imgp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fitsSystemWindows="true"
+                            app:layout_collapseMode="parallax"
+                            android:src="@drawable/menu3"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="#FFFFFF"/>
+
+
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                            app:layout_collapseMode="pin" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|bottom"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/Share"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/connect" />
+
+                        </RelativeLayout>
+
+
+
+                    </android.support.design.widget.CollapsingToolbarLayout>
+
+                </android.support.design.widget.AppBarLayout>
+
+                 <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                         android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        android:orientation="vertical"
+                        android:paddingBottom="6dp">
+
+                        <RelativeLayout
+                            android:id="@+id/r1"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center"
+                                android:text="أضف الاسم"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:id="@+id/img1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent"
+                                android:src="@drawable/arrow_left_big" />
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:src="@drawable/shadow_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/r2"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center"
+                                android:text="أضف رقم الهاتف"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:id="@+id/img2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent"
+                                android:src="@drawable/phone" />
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:src="@drawable/shadow_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/r3"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center"
+                                android:text="ادعو صديق واربح 20 د.ك"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:id="@+id/img3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent"
+                                android:src="@drawable/giveaway" />
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:src="@drawable/shadow_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/r4"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center"
+                                android:text="اصدقائي الملبين للدعوه"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:id="@+id/img4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@color/fui_transparent"
+                                android:src="@drawable/friends_preview" />
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:src="@drawable/shadow_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/r5"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/text5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center"
+                                android:text="رصيدي"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:id="@+id/img5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent"
+                                android:src="@drawable/moneybag" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:src="@drawable/shadow_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/r6"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/text6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center"
+                                android:text="حجوزاتي"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:id="@+id/img6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent"
+                                android:src="@drawable/booking" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:src="@drawable/shadow_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/r7"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/text7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center"
+                                android:text="أضف عنواني"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:id="@+id/img7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent"
+                                android:src="@drawable/address" />
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:src="@drawable/shadow_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/r8"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/text8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center"
+                                android:text="مستنداتي"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:id="@+id/img8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent"
+                                android:src="@drawable/idcard" />
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:src="@drawable/shadow_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/r9"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/text9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center"
+                                android:text="مساعدة"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:id="@+id/img9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent"
+                                android:src="@drawable/onlinesupport" />
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:src="@drawable/shadow_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/r10"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginBottom="20dp"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/text10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center"
+                                android:text="تقييمك"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:id="@+id/img10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/fui_transparent"
+                                android:src="@drawable/thumbs_up_down_preview" />
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:src="@drawable/shadow_line" />
+                    </LinearLayout>
+                     </LinearLayout>
+               </android.support.v4.widget.NestedScrollView>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

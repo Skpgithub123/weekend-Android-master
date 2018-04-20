@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "16945422363",
+    "firebase_url": "https://no5tha-17084.firebaseio.com",
+    "project_id": "no5tha-17084",
+    "storage_bucket": "no5tha-17084.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16945422363:android:163d2a1f0e75ff78",
+        "android_client_info": {
+          "package_name": "com.praveenpayasi.kw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16945422363-1a9l1nhq46k38hng1nra7ojil4r27ums.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.praveenpayasi.kw",
+            "certificate_hash": "fe69656860bcbe99fb228413ec23c0af2423bcd1"
+          }
+        },
+        {
+          "client_id": "16945422363-snjh5kiv7mpaqlqj9d8dfd18fnr9tcg7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.praveenpayasi.kw",
+            "certificate_hash": "728f066bd4d42c462c87e7952a50fcdf0dc64a2a"
+          }
+        },
+        {
+          "client_id": "16945422363-873ml1q4c9ais0jq10m06euf8dgq7l4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHBeSyfTrpeD1Plf7sql6naDtGmLeWBvI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16945422363-3752l0hkb3oodivgfdkdiotn0728n1an.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.yacob.Noti.chat"
+              }
+            },
+            {
+              "client_id": "16945422363-873ml1q4c9ais0jq10m06euf8dgq7l4f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16945422363:android:46166f9bfd53e7a8",
+        "android_client_info": {
+          "package_name": "com.yacob.weekend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16945422363-873ml1q4c9ais0jq10m06euf8dgq7l4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHBeSyfTrpeD1Plf7sql6naDtGmLeWBvI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yacob.weekend.Reservation3"
+    android:orientation="vertical">
+
+    <com.baoyachi.stepview.HorizontalStepView
+        android:id="@+id/step_view3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#575757"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="طريقة الدفع"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ligne"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ligne"
+        app:riv_border_color="#333333"
+        app:riv_border_width="0dip"
+        app:riv_corner_radius="30dip"
+        app:riv_mutate_background="true" />
+
+    <Button
+        android:id="@+id/btnonline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/fui_transparent"
+        android:gravity="center"
+        android:text="ادفع اون لاين"
+        android:textAllCaps="false"
+        android:textColor="@color/tw__blue_pressed"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cash"
+        android:src="@drawable/cash"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        app:riv_corner_radius="30dip"
+        app:riv_border_width="0dip"
+        app:riv_border_color="#333333"
+        app:riv_mutate_background="true" />
+
+    <Button
+        android:id="@+id/btncash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fui_transparent"
+        android:gravity="center"
+        android:text="الدفع نقدا لمندوب الشركه"
+        android:textAllCaps="false"
+        android:textColor="@color/tw__blue_pressed"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

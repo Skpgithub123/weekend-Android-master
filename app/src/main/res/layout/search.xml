@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#4b5767"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:tint="@color/white"
+        android:background="@drawable/rounded_cornor_close"
+        android:id="@+id/img_closedialog"
+        android:src="@drawable/cancel_preview"/>
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="عوائل او الشباب"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/freind"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corner_back"
+            android:padding="3dp"
+            android:tint="@color/cornflower_blue_two"
+            android:src="@drawable/freinds_b" />
+
+        <ImageView
+            android:id="@+id/family"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="3dp"
+            android:src="@drawable/family_b"
+            android:layout_margin="8dp"
+            android:tint="@color/cornflower_blue_two"
+            android:background="@drawable/rounded_corner_back"/>
+
+       <!-- <ImageView
+            android:id="@+id/mixed"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_corner_back"
+            android:padding="3dp"
+            android:src="@drawable/mix_b" />-->
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/room"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="اقل عدد غرف النوم"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="3dp"
+            android:src="@drawable/bed"
+            android:layout_marginRight="8dp"
+            android:tint="@color/white"/>
+        <TextView
+            android:id="@+id/nbroom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:background="@drawable/rectshape"
+            />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/white"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/subtract_preview"/>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/white"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/plus_preview"/>
+
+        </FrameLayout>
+        <!--<ImageView
+            android:id="@+id/moins"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="3dp"
+            android:src="@drawable/bmoins"
+            />-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/housetype"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="نوعية الشاليه"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/pool"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/rounded_corner_back"
+            android:padding="3dp"
+            android:src="@drawable/swim1" />
+
+        <ImageView
+            android:id="@+id/house"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_corner_back"
+            android:padding="3dp"
+            android:tint="#52BE80"
+            android:src="@drawable/home_filled_preview" />
+
+
+        <ImageView
+            android:id="@+id/building"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_corner_back"
+            android:padding="3dp"
+            android:src="@drawable/appartment" />
+
+        <ImageView
+            android:id="@+id/bysea"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_corner_back"
+            android:padding="3dp"
+            android:src="@drawable/chalih" />
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="حمام سباحة"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_corner_back"
+            android:padding="3dp"
+            android:tint="@color/wallet_holo_blue_light"
+            android:src="@drawable/first_40" />
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="3dp"
+            android:src="@drawable/second_40"
+            android:layout_marginRight="8dp"
+            android:tint="@color/wallet_holo_blue_light"
+            android:background="@drawable/rounded_corner_back"/>
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_corner_back"
+            android:padding="3dp"
+            android:tint="@color/wallet_holo_blue_light"
+            android:src="@drawable/sea_40" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/whichline"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="أي صف"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="2dp">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/rounded_corner_back"
+                android:text="ألغي البحث" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="تم"
+                android:background="@drawable/rounded_corner_button_post_green"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_default"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <fragment
+                    android:id="@+id/horizontalMap"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="140dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_corner_button_post">
+
+                        <TextView
+                            android:id="@+id/post"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="List"
+                            android:layout_toRightOf="@+id/floatingBtn"
+                            android:layout_marginRight="8dp"
+                            android:textSize="12sp"
+                            android:onClick="onPressMenuList"
+                            android:textColor="@color/colorPrimary" />
+
+                        <ImageView
+                            android:id="@+id/floatingBtn"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/menu_blue"
+                            android:tint="@color/colorPrimary"
+                            android:onClick="onPressMenuList"
+                            android:layout_centerVertical="true"
+                            android:background="@null"/>
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_toRightOf="@+id/post"
+                            android:layout_width="1dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_height="18dp"
+                            android:background="#575757"></View>
+
+                        <TextView
+                            android:id="@+id/search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Search"
+                            android:onClick="onPressSearch"
+                            android:layout_toRightOf="@+id/imgSearch"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimary" />
+
+                        <ImageView
+                            android:layout_toRightOf="@+id/view2"
+                            android:id="@+id/imgSearch"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/magnify"
+                            android:tint="@color/colorPrimary"
+                            android:layout_centerVertical="true"
+                            android:onClick="onPressSearch"
+                            android:background="@null"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <com.yacob.weekend.adapter.HorizontalListView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:id="@+id/lstHotelsHoriz">
+
+            </com.yacob.weekend.adapter.HorizontalListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

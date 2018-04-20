@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lemonade.widgets.slidesidemenu.SlideSideMenuTransitionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slide_side_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/slider_background"
+        android:padding="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgSliderMenu1"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/menu"/>
+
+
+            <TextView
+                android:layout_toRightOf="@+id/imgSliderMenu1"
+                android:layout_centerVertical="true"
+                android:id="@+id/lblFavourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="الصفحة الرئيسية"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgSliderMenu2"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/share_app_icon"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/imgSliderMenu2"
+                android:layout_centerVertical="true"
+                android:id="@+id/lblShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="شارك هذا التطبيق"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgSliderMenu3"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logout"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/imgSliderMenu3"
+                android:layout_centerVertical="true"
+                android:id="@+id/lblMenuSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="Login"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgSliderMenu4"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mail"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/imgSliderMenu4"
+                android:layout_centerVertical="true"
+                android:id="@+id/lblMenuSignOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="اتصل بنا"/>
+
+        </RelativeLayout>
+
+        <!-- <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             android:textSize="20dp"
+             android:textColor="#ffffff"
+             android:text="Item 4"/>-->
+    </LinearLayout>
+    <com.lemonade.widgets.slidesidemenu.SlideSideMenuContentCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_default"></include>
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </FrameLayout>
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+
+    </android.support.v4.app.FragmentTabHost>
+
+</LinearLayout>
+    </com.lemonade.widgets.slidesidemenu.SlideSideMenuContentCardView>
+</com.lemonade.widgets.slidesidemenu.SlideSideMenuTransitionLayout>
